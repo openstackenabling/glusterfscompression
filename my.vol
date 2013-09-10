@@ -1,0 +1,8 @@
+volume my-posix
+	type storage/posix
+	option directory /play/hello
+end-volume
+volume my-isa
+	type isa/com-isa
+	subvolumes my-posix
+end-volume
